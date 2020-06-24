@@ -18,4 +18,33 @@ The timelimit used for the problems are shown in the table below
 | eil101| 720 |
 
 # Sample Run
+Below you can see a sample run of the MEACO notebook
+```python
+tsp_name = "ulysses16"
+tsp = load_tsp(tsp_name)
+n_ants = 16
+timelimit= 60
+
+print("ACO")
+aco = AntColony(tsp, n_ants=n_ants, timelimit=timelimit)
+shortest_path_edges, length = aco.run()
+shortest_path = [edge[0]+1 for edge in shortest_path_edges]
+print ("shorted_path: {}".format(shortest_path))
+print("Length path: {}".format(length))
+print()
+
+meaco = AntColony(tsp, n_ants=n_ants, timelimit=timelimit, MEACO= True)
+print("MEACO")
+shortest_path_edges, length = meaco.run()
+shortest_path = [edge[0]+1 for edge in shortest_path_edges]
+print ("shorted_path: {}".format(shortest_path))
+print("Length path: {}".format(length))
+print()
+```
+The output:
+```
+ACO
+shorted_path: [1, 8, 16, 12, 13, 14, 6, 7, 10, 9, 11, 5, 15, 4, 2, 3]
+Length path: 6971.0
+```
 
