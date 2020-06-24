@@ -20,7 +20,7 @@ The timelimit used for the problems are shown in the table below
 # Sample Run
 Below you can see a sample run of the MEACO notebook
 ```python
-TSP_PATH = "/tsp/"
+TSP_PATH = "../tsp/"
 tsp_name = "ulysses16"
 tsp = load_tsp(tsp_name)
 n_ants = 16
