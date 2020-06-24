@@ -1,5 +1,5 @@
 # Analysing different ACO extensions
-This repository contains implementations of various ACO extensions. The code for the base ant system was forked from a repository by [Akvall2](https://github.com/Akavall/AntColonyOptimization/). 
+This repository contains implementations of various ACO extensions. The code for the base ant system was forked from a repository by user [Akvall](https://github.com/Akavall/AntColonyOptimization/). 
 
 
 # Data 
